@@ -3,7 +3,7 @@
 body {
     background-color: #273E47;
     background-image: url("../images/mainbackground.png");
-    background-position: right;
+    background-position: left;
     background-blend-mode: screen;
     background-repeat: repeat-y;
 }
