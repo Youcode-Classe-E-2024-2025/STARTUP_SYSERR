@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Gabriela&family=Holtwood+One+SC&display=swap');
+
+.services h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "Gabriela" , "sans-serif";
+    font-weight: normal;
+    margin: auto;
+}
+
+.services-main-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;    
+    align-items: center;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+}
+
+.main-text-left h2{
+    font-size: 4rem;
+    font-family: "Holtwood One SC";
+    font-weight: normal;
+    max-width: 70%;
+    margin: 0 8px;
+}
+
+.craving{
+    font-size: 5rem;
+    font-family: "Holtwood One SC";
+    font-weight: normal;
+    color: #A4243B;
+}
+
+.bite{
+    font-size: 5rem;
+    font-family: "Holtwood One SC";
+    font-weight: normal;
+    color: #D8973C;
+}
+
+.main-text-left a{
+    font-size: 1.5rem;
+    background-color: #A4243B;
+    padding: 10px 10ch;
+    margin: 0 8px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.main-text-left a:hover {
+    transform: scale(1.05);
+    background-color: #EEE7D3;
+    color: #A4243B;
+}
+
+.main-text-left a:active {
+    transform: scale(0.95);
+    background-color: #861d30;
+    color: #EEE7D3;
+}
+
+.main-text-left p{
+    font-size: 1rem;
+    max-width: 30%;
+    padding-top: 1ch;
+    margin: 20px 8px;
+    transition: all 0.2s;
+}
+
+.services-burger{
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    right: 10%;
+    filter: drop-shadow(40px 10px 30px black);
+}
+
+.services-review-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;    
+    border: 2px solid red;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.services-review-container h3{
+    font-family: "Gabriela", "sans-serif";
+    color: #D8973C;
+    font-size: 2rem;
+    margin: 10px 8px;
+}
