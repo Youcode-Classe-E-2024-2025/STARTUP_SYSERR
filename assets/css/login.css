@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Gabriela&family=Holtwood+One+SC&display=swap');
+
+body {
+    background-color: #273E47;
+    background-image: url("../images/loginregisterbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-blend-mode: overlay;
+    margin: 8px;
+    padding:auto;
+    height: 90vh;
+}
+
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1{
+    padding-top: 5ch;
+    font-family: "Gabriela", "sans-serif";
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+h2{
+    padding-top: 1ch;
+    font-family: "Gabriela", "sans-serif";
+    font-size: 2rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+h3{
+    padding-top: 1ch;
+    font-family: "Fustat", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+.login-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1ch;
+    margin: auto;
+}
+
+.login-input{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 1ch;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 8px solid #EEE7D3;
+    transition: all .2s;
+}
+
+.login-input:focus{
+    border-bottom: 8px solid #A4243B;
+}
+
+.login-input::placeholder{
+    color: #EEE7D3;
+    font-weight: lighter;
+}
+
+.btn-login{
+    margin-top: 60px;
+    padding: 10px 13ch;
+    background-color: #A4243B;
+    color: #EEE7D3;
+    font-size: 1.2rem;
+    border: none;
+    transition: all .2s;
+}
+
+.btn-login:hover{
+    transform: scale(1.05);
+    color: #A4243B;
+    background-color: #EEE7D3;
+}
+
+.btn-login:active{
+    transform: scale(0.95);
+    background-color: #d1cab8;
+}
+
+.login-help{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    transition: all .2s;
+}
+
+.login-help a{
+    font-size: 1.1rem;
+    transition: all .2s;
+}
+
+.login-help a:hover{
+    font-size: 1.2rem;
+    color: #A4243B;
+}
+
+.login-help a:active{
+    font-size: 1rem;
+    color: #d1cab8;
+}

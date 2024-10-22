@@ -35,6 +35,15 @@
     }
 }
 
+body{
+    background-color: #273E47;
+    background-image: url("../images/mainbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-blend-mode: screen;
+}
+
 .services h1 {
     display: flex;
     justify-content: center;
