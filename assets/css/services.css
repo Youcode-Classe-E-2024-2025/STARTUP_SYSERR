@@ -64,8 +64,8 @@
 }
 
 .main-text-left p{
-    font-size: 1rem;
-    max-width: 30%;
+    font-size: 1.2rem;
+    max-width: 40%;
     padding-top: 1ch;
     margin: 20px 8px;
     transition: all 0.2s;
@@ -92,6 +92,14 @@
 .services-review-container h3{
     font-family: "Gabriela", "sans-serif";
     color: #D8973C;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 10px 8px;
+}
+
+.main-reviews p{
+    font-family: "Gabriela", "sans-serof";
+    margin: 0 8px;
+    padding-top: 10px;
+    font-weight: normal;
+    font-size: 1.25rem;
 }
