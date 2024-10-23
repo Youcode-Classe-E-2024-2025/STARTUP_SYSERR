@@ -16,11 +16,9 @@ body {
     background-color: #273E47;
     background-image: url("../images/loginregisterbg.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+    background-position:top;
+    background-size: cover;
     background-blend-mode: overlay;
-    padding:auto;
-    height: 90vh;
 }
 
 .sign-section{
@@ -29,6 +27,8 @@ body {
     align-content: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 10ch;
+    margin-bottom: 30ch;
     animation: slideInTop 0.4s ease-in-out forwards;
     opacity: 0;
     transform: translateY(-100%);
@@ -63,13 +63,14 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 1ch;
     margin: auto;
 }
 
 .sign-input{
-    width: 20vw;
-    height: 5vh;
-    margin-top: 1ch;
+    width: 385px;
+    height: 3rem;
+    margin-top: 2.5ch;
     font-size: 1.2rem;
     background-color: transparent;
     border: 0px;
@@ -79,6 +80,7 @@ h3{
 
 .sign-input:focus{
     border-bottom: 8px solid #A4243B;
+    outline: none;
 }
 
 .sign-input::placeholder{
@@ -88,7 +90,7 @@ h3{
 
 .btn-sign{
     margin-top: 60px;
-    padding: 10px 13ch;
+    padding: 10px 10rem;
     background-color: #A4243B;
     color: #EEE7D3;
     font-size: 1.2rem;
@@ -105,4 +107,15 @@ h3{
 .btn-sign:active{
     transform: scale(0.95);
     background-color: #d1cab8;
+}
+
+@media (max-width: 400px) {
+    .sign-input{
+        width: 350px;
+        transition: all .2s;
+    }
+
+    .btn-sign{
+        padding: 10px 9.1rem;
+    }
 }

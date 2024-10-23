@@ -1,5 +1,5 @@
-footer{
-    margin-top: 25ch;
+footer {
+    margin-top: 20ch;
     background-color: #273E47;
     background-image: url("../images/footerbg.png");
     background-blend-mode: hard-light;
@@ -8,62 +8,133 @@ footer{
     background-size: cover;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding: 5ch;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.logo{
-    width: 20%;
+.logo {
+    width: 15%;
     margin-left: 2%;
 }
 
-.footer-left{
+.footer-left,
+.footer-mid,
+.footer-right {
+    flex: 1 1 30%;
     display: flex;
     flex-direction: column;
-    max-width: 20%;
 }
 
 .footer-left p{
     font-family: "Gabriela", "sans-serif";
     padding-top: 10px;
     font-size: 1rem;
-    max-width: 50%;
 }
 
-.footer-mid{
-    display: flex;
-    flex-direction: column;
+.footer-left {
+    max-width: 30%;
 }
 
-.footer-mid ul{
+.footer-mid {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-mid h2 {
+    font-size: 2rem;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: normal;
+    text-align: center;
+}
+
+.footer-mid ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 1ch;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-mid ul li{
+.footer-mid ul li {
     padding-top: 1.5ch;
+    text-align: center;
+    width: 100%;
 }
 
-.footer-mid ul li a{
+.footer-mid ul li a {
     font-family: "Gabriela", "sans-serif";
     font-weight: light;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
+    display: block;
 }
 
-.footer-mid ul li a:hover{
+.footer-mid ul li a:hover {
     color: #C36732;
 }
 
-.footer-right h2{
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    max-width: 30%; 
+}
+
+.footer-right h2 {
+    font-size: 2rem;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: normal;
+    text-align: center; 
     padding-bottom: 1ch;
 }
 
-.footer-right p{
+.footer-right p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
     padding-top: 10px;
     font-family: "Gabriela", "sans-serif";
     font-weight: light;
+    max-width: 100%;
+}
+
+.footer-right p i {
+    font-size: 1.2rem;
+    color: #EEE7D3;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+
+    .footer-left,
+    .footer-mid,
+    .footer-right {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-mid ul {
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-mid ul li {
+        width: 100%;
+        text-align: center;
+    }
 }

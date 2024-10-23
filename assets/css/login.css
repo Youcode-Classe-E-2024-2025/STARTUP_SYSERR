@@ -16,25 +16,25 @@ body {
     background-color: #273E47;
     background-image: url("../images/loginregisterbg.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+    background-position: top;
+    background-size: cover;
     background-blend-mode: overlay;
-    padding:auto;
-    height: 90vh;
 }
 
-.login-section{
+.login-section {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 20ch;
+    margin-bottom: 40ch;
     animation: slideInTop 0.4s ease-in-out forwards;
     opacity: 0;
     transform: translateY(-100%);
 }
 
-h1{
+h1 {
     padding-top: 2.5ch;
     font-family: "Gabriela", "sans-serif";
     font-size: 2.5rem;
@@ -42,7 +42,7 @@ h1{
     margin: auto;
 }
 
-h2{
+h2 {
     padding-top: 1ch;
     font-family: "Gabriela", "sans-serif";
     font-size: 2rem;
@@ -50,7 +50,7 @@ h2{
     margin: auto;
 }
 
-h3{
+h3 {
     padding-top: 1ch;
     font-family: "Fustat", "sans-serif";
     font-size: 1.5rem;
@@ -58,7 +58,7 @@ h3{
     margin: auto;
 }
 
-.login-info{
+.login-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,29 +67,30 @@ h3{
     margin: auto;
 }
 
-.login-input{
-    width: 20vw;
-    height: 5vh;
-    margin-top: 1ch;
+.login-input {
+    width: 385px;
+    height: 3rem;
+    margin-top: 3ch;
     font-size: 1.2rem;
     background-color: transparent;
-    border: 0px;
+    border: 0;
     border-bottom: 8px solid #EEE7D3;
     transition: all .2s;
 }
 
-.login-input:focus{
+.login-input:focus {
     border-bottom: 8px solid #A4243B;
+    outline: none;
 }
 
-.login-input::placeholder{
+.login-input::placeholder {
     color: #EEE7D3;
     font-weight: lighter;
 }
 
-.btn-login{
+.btn-login {
     margin-top: 60px;
-    padding: 10px 13ch;
+    padding: 10px 10rem;
     background-color: #A4243B;
     color: #EEE7D3;
     font-size: 1.2rem;
@@ -97,18 +98,18 @@ h3{
     transition: all .2s;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     transform: scale(1.05);
     color: #A4243B;
     background-color: #EEE7D3;
 }
 
-.btn-login:active{
+.btn-login:active {
     transform: scale(0.95);
     background-color: #d1cab8;
 }
 
-.login-help{
+.login-help {
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -116,17 +117,32 @@ h3{
     transition: all .2s;
 }
 
-.login-help a{
+.login-help a {
     font-size: 1.1rem;
     transition: all .2s;
 }
 
-.login-help a:hover{
+.login-help a:hover {
     font-size: 1.2rem;
     color: #A4243B;
 }
 
-.login-help a:active{
+.login-help a:active {
     font-size: 1rem;
     color: #d1cab8;
+}
+
+.login-help a:focus {
+    outline: 2px solid #A4243B;
+}
+
+@media (max-width: 400px) {
+    .login-input {
+        width: 350px;
+        transition: all .2s;
+    }
+
+    .btn-login {
+        padding: 10px 9.1rem;
+    }
 }
