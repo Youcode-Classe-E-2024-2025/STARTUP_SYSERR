@@ -88,3 +88,72 @@ body {
     background-color: #861d30;
     color: #EEE7D3;
 }
+ /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de la Section 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+ .imgTacos{
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:25px 50px;
+    
+ }
+ .imgTacos h1{
+    font-family:Holtwood One SC;
+    font-size:25px;
+    color:#C36732
+ }
+.imgTacos img{
+      width: 30%;
+      height: 40px;
+      align-self: center;  
+}
+ .Tacos{
+      width:90%;
+      display:flex;
+      justify-content:center;
+      gap:60px;
+      margin:30px 50px;
+ }
+ .Tacos div{
+    width:300px;
+    height: 400px;
+    background-color: #EEE7D3;
+    align-self: center;
+    border: 1px solid black;
+}
+.Tacos div img{
+    width:295px;
+    height: 200px;
+    align-self: center;
+    padding:0px;
+    
+}
+.Tacos div h1 {
+    font-family:Gabriela;
+    color:#C36732;
+    font-size:20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Tacos div h3 {
+    font-family:Gabriela;
+    color:black;
+    font-size:18px;
+    text-align: center;
+    padding-top: 10px;
+}
+.Tacos div button {
+    width:295px;
+    height:35px;
+    font-family:Gabriela;
+    color:rgb(216, 200, 200);
+    font-size:15px;
+    text-align: center;
+    margin-top:33px;
+    background-color: #861d30;
+    
+}
