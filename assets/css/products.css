@@ -153,6 +153,44 @@ body {
     background-color: #861d30;
 }
 
+.fritback img{
+    height:455px;
+    width: 500px;
+}
+.qsmfrit{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.frittes{
+    height:455px;
+    width: 500px;
+    background-color:#C36732;
+}
+.frittes h1{
+      font-size:50px;
+      margin:10px;
+}
+.input1{
+    display:flex;
+    font-size:25px;
+    margin:10px;
+    font-family:Gabriela;
+    gap:20px;
+
+}
+.input1 input{
+    height: 25px;
+    width: 25px;
+}
+.sauce button{
+    height: 50px;
+    width: 493px;
+    background-color: #861d30;
+    margin-top:33px;
+    font-size: 23px;
+    font-family:Gabriela;
+}
 
 
 
