@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
-    background-color: #273e47ac;
+    background-color: #273e479d;
     background-image: url("../images/mainbackground.png");
     background-position: center;
     background-blend-mode: screen;
@@ -115,6 +115,7 @@ body {
     background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)),url(/assets/images/bacimg.webp);
     padding:20px;
     transition: transform 0.5s ease;
+    overflow: hidden;
 }
 .images img{
     width: 100%;
@@ -185,3 +186,12 @@ body {
         transform: translate(0);
     }
 }
+
+
+
+
+
+
+
+
+
