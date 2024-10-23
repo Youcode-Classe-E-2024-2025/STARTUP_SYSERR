@@ -23,30 +23,30 @@
         transform: rotate(5deg);
     }
 
-    50%{
+    50% {
         transform: rotate(0);
     }
 
     75% {
         transform: rotate(-5deg);
     }
-    100%{
+
+    100% {
         transform: rotate(0);
     }
 }
 
-.service-body{
+.service-body {
     background-color: #273E47;
     background-image: url("../images/mainbackground.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-blend-mode: screen;
     margin: 0;
     padding: 0;
 }
 
-.services{
+.services {
     padding-top: 5rem;
 }
 
@@ -84,7 +84,8 @@
     margin: 0 8px;
 }
 
-.craving ,.bite{
+.craving,
+.bite {
     font-size: 5rem;
     font-family: "Holtwood One SC";
     font-weight: normal;
@@ -101,13 +102,17 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s ease infinite;
     display: inline-block;
-    
+
 }
 
 .main-text-left a {
     font-size: 1.5rem;
     background-color: #A4243B;
-    padding: 10px 10rem;
+    display: block;
+    width: 35%;
+    padding-top: 8px;
+    height: 50px;
+    text-align: center;
     margin: 0 8px;
     font-weight: bold;
     transition: all 0.2s;
@@ -209,7 +214,7 @@
     background-color: rgba(29, 46, 53, 0.5);
     width: 23vw;
     margin: auto;
-    padding: 20px;
+    padding: 8px;
     text-align: center;
     transition: all 0.2s;
 }
@@ -225,6 +230,7 @@ h3 {
     margin-bottom: 10px;
     font-family: "Gabriela", sans-serif;
     font-weight: normal;
+    text-align: center;
 }
 
 .service-stats p {
@@ -242,42 +248,75 @@ h4 {
 }
 
 @media (max-width: 928px) {
-    .services-burger{
+    .services-burger {
         width: 40%;
         left: 60%;
         transition: all .2s;
     }
-    .main-text-left p{
+
+    .main-text-left p {
         max-width: 100%;
         transition: all .2s;
     }
-    .services-stats-container{
+
+    .services-stats-container {
         grid-template-columns: 1fr;
         transition: all .2s;
     }
-    h4{
+
+    h4 {
         font-size: 1.2rem;
         transition: all .2s;
     }
 }
 
 @media (max-width: 690px) {
-    .services-burger{
-        width: 80%;
-        left: 10%;
-        transition: all .2s;
+    .services-burger {
+        display: none;
     }
-    .main-text-left h2{
+
+    .main-text-left h2 {
+        font-size: 2.5rem;
         max-width: 100%;
+        text-align: center;
         transition: all .2s;
     }
-    .services{
+
+    .craving, .bite{
+        font-size: 2.5rem;
+    }
+
+    .main-text-left p{
+        text-align: center;
+    }
+
+    .services {
         padding: 0;
     }
-    .services-stats-container{
+
+    .services-stats-container {
         padding: 0;
     }
-    h4{
+
+    h4 {
         font-size: 0.8rem;
+    }
+
+    .main-text-left a {
+        width: auto;
+    }
+    .services-review-container h3{
+        text-align: center;
+    }
+    .main-reviews p{
+        text-align: center;
+    }
+    
+    .service-stats{
+        max-width: 100%;
+    }
+
+    .service-info{
+        width: 50vw;
     }
 }
