@@ -91,6 +91,7 @@ body {
 .imageBack2{
     display: flex;
     justify-content: center;
+    
 }
 .images{ 
     height: 250px;
@@ -166,6 +167,14 @@ body {
         transform: translate(0);
     }
 }
+.img1 img:hover{
+    transform: scale(1.2); 
+    border-radius: 15px;
+}
+.img1 h2:hover{
+    background-color: #861d30;
+}
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CSS du Footer  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 footer{
