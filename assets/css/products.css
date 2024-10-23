@@ -89,7 +89,6 @@ body {
     color: #EEE7D3;
 }
  /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de la Section 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
  .imgTacos{
     width: 90%;
     height: 40px;
@@ -97,8 +96,7 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin:25px 50px;
-    
+    margin:25px 50px;  
  }
  .imgTacos h1{
     font-family:Holtwood One SC;
@@ -128,8 +126,7 @@ body {
     width:295px;
     height: 200px;
     align-self: center;
-    padding:0px;
-    
+    padding:0px;    
 }
 .Tacos div h1 {
     font-family:Gabriela;
@@ -138,7 +135,6 @@ body {
     text-align: center;
     padding-top: 10px;
 }
-
 .Tacos div h3 {
     font-family:Gabriela;
     color:black;
@@ -155,5 +151,9 @@ body {
     text-align: center;
     margin-top:33px;
     background-color: #861d30;
-    
 }
+
+
+ /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de la Section 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+ 
