@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Gabriela&family=Holtwood+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+ /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de Header  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 body {
     background-color: #273e4788;
     background-image: url("../images/mainbackground.png");
@@ -88,7 +90,7 @@ body {
     background-color: #861d30;
     color: #EEE7D3;
 }
- /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de la Section 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+ /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de la Section 1 , 2 , 3 , et 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
  .imgTacos{
     width: 90%;
     height: 40px;
@@ -153,6 +155,7 @@ body {
     background-color: #861d30;
 }
 
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CSS du 5ieme section  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .fritback img{
     height:455px;
     width: 500px;
@@ -191,6 +194,8 @@ body {
     font-size: 23px;
     font-family:Gabriela;
 }
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CSS du footer  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
   
+
 
