@@ -253,5 +253,14 @@ footer{
     font-family: "Gabriela", "sans-serif";
     font-weight: light;
 }
-
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Animation  CSS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.Tacos :hover { 
+     transform: scale(1.08);
+}
+.element1 button:hover{
+    background-color: #C36732;
+}
+.sauce button:hover{
+    background-color: #baa192;
+    color:black;
+}
