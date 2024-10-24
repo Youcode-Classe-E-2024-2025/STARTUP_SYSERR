@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/products.css">
+    <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -15,21 +16,42 @@
         <nav class="nav-bar">
             <img src="assets/images/logosyserr.png" alt="SYSERR FOOD's logo" id="logo">
             <ul class="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">FAQ</a></li>
+                <li class="hideOnPhone"><a href="home.html">Home</a></li>
+                <li class="hideOnPhone"><a href="menu.html">Menu</a></li>
+                <li class="hideOnPhone"><a href="services.html">Services</a></li>
+                <li class="hideOnPhone"><a href="about.html">About</a></li>
+                <li class="hideOnPhone"><a href="faq.html">FAQ</a></li>
             </ul>
-            <a href="" class="login-btn">LOG IN</a>
+            <a href="login.html" class="login-btn">LOG IN</a>
+            <svg class="menuicon" onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" height="50px"
+                viewBox="0 -960 960 960" width="50px">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </nav>
+        <div class="nav-burger">
+            <ul class="burger-links">
+                <li>
+                    <svg onclick="closeMenu()" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960"
+                        width="50px" class="closeicon">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="login.html" class="login-btn-burger">LOG IN</a></li>
+            </ul>
+        </div>
     </header>
     <!-- **************************************** Fin HEADER  **************************************************-->
      
     <!-- **************************************** Début  Main  ************************************************ -->
     <main>
         <section id="section1">
-              <div class="imgTacos"><h1>Tacos</h1><img src="/assets/images/T3.jpg"><h1>Tacos</h1></div>
+              <div class="imgTacos"><h1>Tacos</h1><img src="/assets/images/tacos.webp"><h1>Tacos</h1></div>
               <div class="Tacos">
                  <div class="element1">
                     <img src="/assets/images/T2.jpg">
@@ -52,7 +74,7 @@
               </div>
         </section>
         <section id="section2">
-            <div class="imgTacos"><h1>PIZZA</h1><img src="/assets/images/T3.jpg"><h1>PIZZA</h1></div>
+            <div class="imgTacos"><h1>PIZZA</h1><img src="/assets/images/pizza.webp"><h1>PIZZA</h1></div>
             <div class="Tacos">
                <div class="element1">
                   <img src="/assets/images/P2.jpg">
@@ -75,12 +97,12 @@
             </div>
         </section>
         <section id="section3">
-            <div class="imgTacos"><h1>SHAWARMA</h1><img src="/assets/images/T3.jpg"><h1>SHAWARMA</h1></div>
+            <div class="imgTacos"><h1>SHAWARMA</h1><img src="/assets/images/shawarma.webp"><h1>SHAWARMA</h1></div>
             <div class="Tacos">
                <div class="element1">
                   <img src="/assets/images/SCh1.jpg">
                   <h1>Beef Shawarma</h1>
-                  <h3>beef that has been slow-cooked on a vertical rotisserie until tender. </h3>
+                  <h3>tomato sauce,beef that has been slow-cooked on a vertical rotisserie until tender. </h3>
                   <button>Take it Now</button>
               </div>
                <div class="element1">
@@ -98,7 +120,7 @@
             </div>
         </section>
         <section id="section4">
-            <div class="imgTacos"><h1>BURGER</h1><img src="/assets/images/T3.jpg"><h1>BURGER</h1></div>
+            <div class="imgTacos"><h1>BURGER</h1><img src="/assets/images/burger.webp"><h1>BURGER</h1></div>
             <div class="Tacos">
                <div class="element1">
                   <img src="/assets/images/B3.jpg">
@@ -115,7 +137,7 @@
                <div class="element1">
                   <img src="/assets/images/B2.jpg">
                   <h1>Lamb Burger</h1>
-                  <h3>seasoned lamb patty mixed with chopped dried apricots and herbs. </h3>
+                  <h3>tomato sauce,seasoned lamb patty mixed with chopped dried apricots and herbs. </h3>
                   <button>Take it Now</button>
               </div>
             </div>
@@ -179,5 +201,7 @@
     </div>
 </footer>
    <!-- **************************************** Fin HEADER  **************************************************-->
+    <script src="/assets/js/activenavbar.js"></script>
+    <script src="/assets/js/burger.js"></script>
 </body>
 </html>
