@@ -253,3 +253,31 @@ footer{
     font-weight: light;
 }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Résponsivité du page home  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+@media (min-width:600px) and (max-width:850px) {
+    #img4{
+       display:none;
+    }
+    .title h1{
+        font-family:"Holtwood One SC" ;
+        font-size:30px;
+    }
+    .nav-bar{
+        display: none;
+    }
+}
+
+@media (min-width:320px) and (max-width:599px) {
+    #img4{
+       display:none;
+    }
+    #img3{
+        display:none;
+     }
+    .title h1{
+        font-family:"Holtwood One SC" ;
+        font-size:20px;
+    }
+    .nav-bar{
+        display: none;
+    }
+}
