@@ -235,8 +235,24 @@ section{
     animation-delay: 0s;
     transition-delay: 1s;
 }
-
-
+@media (max-width :1024px) {
+    .layout{
+        width: 700px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:375px) {
+    
+    
+    .layout{
+        width: 200px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
