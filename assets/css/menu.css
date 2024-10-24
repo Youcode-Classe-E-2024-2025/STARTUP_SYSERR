@@ -208,42 +208,40 @@ body {
 }
    
   }
-  @media screen and (min-width:599px) and (max-width:320px) {
+
+   @media screen and (min-width:400px) and (max-width:599px) {
     .imgTacos{
         display: none;
      }
-     #ele1{
-        display: none;
-     }
-     #ele2{
-        display: none;
-     }
      .frittes{
-        width: 300px;
+        width:300px;
+        margin-left:4px;
     }
     .sauce button{
         width: 292px;
     }
- 
     .fritback img{
-        width: 250px;
+        display: none;
     }
     .Tacos{
-        gap:20px;
+        display: block;
+        gap:30px;
+        text-align: center;     
+         
    }
-
    .Tacos div{
-    width:250px;
-    margin-right: 30px;
+    width:220px;
+    margin-left:70px; 
+    margin-top:10px;
 }
 .Tacos div img{
-    width:245px;
+    width:215px;
 }
 .Tacos div h3 {
     font-size:14px;
 }
 .Tacos div button {
-    width:245px;
+    width:215px;
     margin-top:53px;
 }
    
