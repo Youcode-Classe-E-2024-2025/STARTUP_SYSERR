@@ -116,6 +116,7 @@ body {
       justify-content:center;
       gap:60px;
       margin:30px 50px;
+      transition: all .2s;
  }
  .Tacos div{
     width:300px;
@@ -123,12 +124,14 @@ body {
     background-color: #EEE7D3;
     align-self: center;
     border: 1px solid black;
+    transition: all .2s;
 }
 .Tacos div img{
     width:295px;
     height: 200px;
     align-self: center;
-    padding:0px;    
+    padding:0px;
+    transition: all .2s;    
 }
 .Tacos div h1 {
     font-family:Gabriela;
@@ -136,6 +139,7 @@ body {
     font-size:20px;
     text-align: center;
     padding-top: 10px;
+    transition: all .2s;
 }
 .Tacos div h3 {
     font-family:Gabriela;
@@ -143,6 +147,7 @@ body {
     font-size:18px;
     text-align: center;
     padding-top: 10px;
+    transition: all .2s;
 }
 .Tacos div button {
     width:295px;
@@ -154,6 +159,7 @@ body {
     margin-top:33px;
     background-color: #861d30;
     border-style:none;
+    transition: all .2s;
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CSS du 5ieme section  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -195,65 +201,7 @@ body {
     margin-top:46px;
     font-size: 23px;
     font-family:Gabriela;
-}
-/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CSS du footer  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
-footer{
-    margin-top: 25ch;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.929),#273e47a6),url(/assets/images/bacimg.webp);
-    background-blend-mode: hard-light;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 5ch;
-}
-.logo{
-    width: 20%;
-    margin-left: 2%;
-}
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    max-width: 20%;
-}
-.footer-left p{
-    font-family: "Gabriela", "sans-serif";
-    padding-top: 10px;
-    font-size: 1rem;
-    max-width: 50%;
-}
-.footer-mid{
-    display: flex;
-    flex-direction: column;
-}
-.footer-mid ul{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 1ch;
-}
-.footer-mid ul li{
-    padding-top: 1.5ch;
-}
-.footer-mid ul li a{
-    font-family: "Gabriela", "sans-serif";
-    font-weight: light;
-    transition: all .2s ease;
-}
-.footer-mid ul li a:hover{
-    color: #C36732;
-}
-.footer-right h2{
-    padding-bottom: 1ch;
-}
-.footer-right p{
-    padding-top: 10px;
-    font-family: "Gabriela", "sans-serif";
-    font-weight: light;
+    transition: all .2s;
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Animation  CSS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .Tacos :hover { 
