@@ -3,7 +3,7 @@
 
 /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CSS de header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 body {
-    background-color: #273e47ac;
+    background-color: #022b3d7b;
     background-image: url("../images/mainbackground.png");
     background-position: center;
     background-blend-mode: screen;
@@ -141,7 +141,27 @@ body {
     margin-top:15px;
     font-family: Fustat,sans-serif;
 }
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
+}
+.carousel button{
+    background-color: #BD632F;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Animation CSS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .h1{
     font-size: 3em;
     color:#BD632F;
@@ -164,68 +184,72 @@ body {
         transform: translate(0);
     }
 }
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-
-}
-.carousel button{
-    background-color: #BD632F;
-}
 button.prev:hover, button.next:hover {
     background-color: rgba(255, 255, 255, 0.6)
 }
-.prev {
-    left: 10px;
+.carousel-images img:hover{
+    transform: scale(1.2); 
+    border-radius: 15px;
 }
-
-.next {
-    right: 10px;
+.carousel-images h2:hover{
+    background-color: #861d30;
 }
-@media (max-width: 1024px) {
-    .carousel-image {
-        min-width: 50%; /* Two images visible */
-        margin-right: 15px;
-    }
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CSS du Footer  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+footer{
+    margin-top: 25ch;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.868),#273e47),url(/assets/images/bacimg.webp);
+    background-blend-mode: hard-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-@media (max-width: 600px) {
-    .carousel-image {
-        min-width: 100%;
-        margin-right: 20px;
-    }
-
-    .prev, .next {
-        padding: 8px;
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1em;
-    }
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5ch;
 }
-@media (max-width: 400px) {
-    .prev, .next {
-        padding: 5px;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    h2 {
-        font-size: 0.8em;
-    }
+.logo{
+    width: 20%;
+    margin-left: 2%;
 }
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Animation CSS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+}
+.footer-left p{
+    font-family: "Gabriela", "sans-serif";
+    padding-top: 10px;
+    font-size: 1rem;
+    max-width: 50%;
+}
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+}
+.footer-mid ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 1ch;
+}
+.footer-mid ul li{
+    padding-top: 1.5ch;
+}
+.footer-mid ul li a{
+    font-family: "Gabriela", "sans-serif";
+    font-weight: light;
+    transition: all .2s ease;
+}
+.footer-mid ul li a:hover{
+    color: #C36732;
+}
+.footer-right h2{
+    padding-bottom: 1ch;
+}
+.footer-right p{
+    padding-top: 10px;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: light;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Résponsivité du page home  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
