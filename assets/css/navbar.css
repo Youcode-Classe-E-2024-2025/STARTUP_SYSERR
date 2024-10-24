@@ -111,7 +111,7 @@
     transition: all .2s;
 }
 
-.closeicon{
+.closeicon {
     fill: #EEE7D3;
 }
 
@@ -119,8 +119,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 25rem;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     z-index: 999;
     background-color: #273e4769;
     backdrop-filter: blur(10px);
@@ -137,27 +137,22 @@
     display: block;
     margin: auto;
     background-color: #A4243B;
-    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
     margin-right: 40px;
+    padding: 20px;
     width: 300px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     transition: all .2s ease;
 }
 
-.login-btn-burger {
-    display: block;
-    margin: auto;
-    background-color: #A4243B;
-    margin-top: 20px;
-    width: 300px;
-    text-align: center;
-    font-size: 1.5em;
-    transition: all .2s ease;
-}
-
-.nav-links a.active,
 .burger-links a.active {
+    color: #273E47;
+    letter-spacing: 10px;
+}
+
+.nav-links a.active {
     color: #C36732;
     letter-spacing: 10px;
 }
@@ -179,6 +174,7 @@
     .login-btn {
         display: none;
     }
+
     #logo {
         width: 8%;
     }
@@ -188,6 +184,7 @@
     .nav-burger {
         width: 100%;
     }
+
     #logo {
         width: 12%;
     }

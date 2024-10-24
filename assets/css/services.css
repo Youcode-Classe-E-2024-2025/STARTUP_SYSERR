@@ -102,7 +102,6 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s ease infinite;
     display: inline-block;
-
 }
 
 .main-text-left a {
@@ -282,11 +281,12 @@ h4 {
         transition: all .2s;
     }
 
-    .craving, .bite{
+    .craving,
+    .bite {
         font-size: 2.5rem;
     }
 
-    .main-text-left p{
+    .main-text-left p {
         text-align: center;
     }
 
@@ -305,18 +305,20 @@ h4 {
     .main-text-left a {
         width: auto;
     }
-    .services-review-container h3{
+
+    .services-review-container h3 {
         text-align: center;
     }
-    .main-reviews p{
+
+    .main-reviews p {
         text-align: center;
     }
-    
-    .service-stats{
+
+    .service-stats {
         max-width: 100%;
     }
 
-    .service-info{
+    .service-info {
         width: 50vw;
     }
 }
