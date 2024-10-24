@@ -143,4 +143,30 @@ body {
     color:black;
 }
 
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% madias Query   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+@media screen and (min-width:1000px) and (max-width: 1230px) {
+    .imgTacos{
+        max-width:80%;
+        margin-top:40px;
+        margin-left:115px;
+     }
+     .Tacos div{
+        width:250px;
+    }
+    .Tacos div img{
+        width:245px;
+    }
+    .Tacos div h3 {
+        font-size:16px;
+    }
+    .Tacos div button {
+        width:245px;
+        margin-top:45px;
+    }
+    .frittes{
+        width: 400px;
+    }
+    .sauce button{
+        width: 392px;
+    }
+  }
