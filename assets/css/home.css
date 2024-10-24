@@ -265,8 +265,7 @@ footer{
         display: none;
     }
 }
-
-@media (min-width:320px) and (max-width:599px) {
+@media (min-width:394px) and (max-width:599px) {
     #img4{
        display:none;
     }
@@ -274,10 +273,12 @@ footer{
         display:none;
      }
     .title h1{
-        font-family:"Holtwood One SC" ;
         font-size:20px;
     }
     .nav-bar{
         display: none;
+    }
+    .carousel-images h1{
+        font-size:14px;
     }
 }
