@@ -208,3 +208,43 @@ body {
 }
    
   }
+  @media screen and (min-width:599px) and (max-width:320px) {
+    .imgTacos{
+        display: none;
+     }
+     #ele1{
+        display: none;
+     }
+     #ele2{
+        display: none;
+     }
+     .frittes{
+        width: 300px;
+    }
+    .sauce button{
+        width: 292px;
+    }
+ 
+    .fritback img{
+        width: 250px;
+    }
+    .Tacos{
+        gap:20px;
+   }
+
+   .Tacos div{
+    width:250px;
+    margin-right: 30px;
+}
+.Tacos div img{
+    width:245px;
+}
+.Tacos div h3 {
+    font-size:14px;
+}
+.Tacos div button {
+    width:245px;
+    margin-top:53px;
+}
+   
+  }
