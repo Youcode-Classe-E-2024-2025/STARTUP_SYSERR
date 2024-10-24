@@ -27,7 +27,7 @@ body {
     align-content: center;
     flex-direction: column;
     margin: auto;
-    margin-top: 10ch;
+    margin-top: 5ch;
     margin-bottom: 30ch;
     animation: slideInTop 0.4s ease-in-out forwards;
     opacity: 0;
