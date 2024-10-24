@@ -87,6 +87,7 @@ body {
 .title h1{
     font-family:"Holtwood One SC" ;
     font-size:46px;
+    
 }
 .carousel {
     position: relative;
@@ -161,11 +162,26 @@ body {
 .next {
     right: 10px;
 }
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Animation CSS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .h1{
     font-size: 3em;
-    color:#BD632F;
-    animation: vibrate 0.4s linear infinite;
+    background-image: linear-gradient(-225deg,
+            #b00c2a 0%,
+            #D8973C 50%,
+            #A4243B 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: vibrate 0.4s linear infinite , textclip 1s ease infinite;
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 @keyframes vibrate {
     0% {
