@@ -144,7 +144,7 @@ body {
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% madias Query   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-@media screen and (min-width:1000px) and (max-width: 1230px) {
+@media screen and (min-width:1000px) and (max-width:1230px) {
     .imgTacos{
         max-width:80%;
         margin-top:40px;
@@ -169,4 +169,42 @@ body {
     .sauce button{
         width: 392px;
     }
+  }
+
+  @media screen and (min-width:600px) and (max-width:999px) {
+    .imgTacos{
+        display: none;
+     }
+     #ele1{
+        display: none;
+     }
+     .frittes{
+        width: 300px;
+    }
+    .sauce button{
+        width: 292px;
+    }
+ 
+    .fritback img{
+        width: 250px;
+    }
+    .Tacos{
+        gap:20px;
+   }
+
+   .Tacos div{
+    width:250px;
+    margin-right: 30px;
+}
+.Tacos div img{
+    width:245px;
+}
+.Tacos div h3 {
+    font-size:14px;
+}
+.Tacos div button {
+    width:245px;
+    margin-top:53px;
+}
+   
   }
