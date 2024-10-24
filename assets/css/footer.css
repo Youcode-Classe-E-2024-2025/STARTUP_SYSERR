@@ -1,0 +1,142 @@
+footer {
+    margin-top: 20ch;
+    background-color: #273E47;
+    background-image: url("../images/footerbg.png");
+    background-blend-mode: hard-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5ch;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.logofooter {
+    width: 15%;
+    margin-left: 2%;
+}
+
+.footer-left,
+.footer-mid,
+.footer-right {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p {
+    font-family: "Gabriela", "sans-serif";
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+.footer-left {
+    max-width: 30%;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-mid h2 {
+    font-size: 2rem;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: normal;
+    text-align: center;
+    color: #C36732;
+}
+
+.footer-mid ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1ch;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-mid ul li {
+    padding-top: 1.5ch;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-mid ul li a {
+    font-family: "Gabriela", "sans-serif";
+    font-weight: light;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+.footer-mid ul li a:hover {
+    color: #C36732;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    max-width: 30%;
+}
+
+.footer-right h2 {
+    font-size: 2rem;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: normal;
+    text-align: center;
+    color: #C36732;
+    padding-bottom: 1ch;
+}
+
+.footer-right p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+    padding-top: 10px;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: light;
+    max-width: 100%;
+}
+
+.footer-right p i {
+    font-size: 1.2rem;
+    color: #EEE7D3;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-mid,
+    .footer-right {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-mid ul {
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-mid ul li {
+        width: 100%;
+        text-align: center;
+    }
+}

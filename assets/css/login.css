@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Gabriela&family=Holtwood+One+SC&display=swap');
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #273E47;
+    background-image: url("../images/loginregisterbg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10ch;
+    margin-bottom: 40ch;
+    animation: slideInTop 0.4s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+h1 {
+    padding-top: 2.5ch;
+    font-family: "Gabriela", "sans-serif";
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+h2 {
+    padding-top: 1ch;
+    font-family: "Gabriela", "sans-serif";
+    font-size: 2rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+h3 {
+    padding-top: 1ch;
+    font-family: "Fustat", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+.login-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1ch;
+    margin: auto;
+}
+
+.login-input {
+    width: 385px;
+    height: 3rem;
+    margin-top: 3ch;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 8px solid #EEE7D3;
+    transition: all .2s;
+}
+
+.login-input:focus {
+    border-bottom: 8px solid #A4243B;
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: #EEE7D3;
+    font-weight: lighter;
+}
+
+.btn-login {
+    margin-top: 60px;
+    padding: 10px 10rem;
+    background-color: #A4243B;
+    color: #EEE7D3;
+    font-size: 1.2rem;
+    border: none;
+    transition: all .2s;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+    color: #A4243B;
+    background-color: #EEE7D3;
+}
+
+.btn-login:active {
+    transform: scale(0.95);
+    background-color: #d1cab8;
+}
+
+.login-help {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    transition: all .2s;
+}
+
+.login-help a {
+    font-size: 1.1rem;
+    transition: all .2s;
+}
+
+.login-help a:hover {
+    font-size: 1.2rem;
+    color: #A4243B;
+}
+
+.login-help a:active {
+    font-size: 1rem;
+    color: #d1cab8;
+}
+
+.login-help a:focus {
+    outline: 2px solid #A4243B;
+}
+
+@media (max-width: 400px) {
+    .login-input {
+        width: 350px;
+        transition: all .2s;
+    }
+
+    .btn-login {
+        padding: 10px 9.1rem;
+    }
+}
