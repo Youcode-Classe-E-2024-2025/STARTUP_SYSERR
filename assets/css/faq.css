@@ -257,6 +257,28 @@ footer {
     }
 }
 
+@keyframes accordslide {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes accordslideback {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+}
+
 section{
     animation: slide 0.8s ease forwards;
     opacity: 0;
