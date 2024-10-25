@@ -95,7 +95,7 @@ body {
     height: 260px;
     margin: auto;
     overflow: hidden;
-    background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)),url(./assets/images/bacimg.webp);
+    background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)),url(../assets/images/bacimg.webp);
     display: flex;
     justify-content: center;
    
