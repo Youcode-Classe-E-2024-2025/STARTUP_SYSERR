@@ -3,7 +3,7 @@
 
 /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style de body  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 body {
-    background-color: #273e4788;
+    background-color: #273E47;
     background-image: url("../images/mainbackground.png");
     background-position: center;
     background-blend-mode: screen;
@@ -174,7 +174,7 @@ body {
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% madias Query   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-@media screen and (min-width:1000px) and (max-width:1230px) {
+@media(max-width:1230px) {
     .imgTacos {
         width: 54.5rem;
 
@@ -206,7 +206,7 @@ body {
     }
 }
 
-@media screen and (min-width:600px) and (max-width:999px) {
+@media (max-width:999px) {
     .imgTacos {
         width: 33rem;
     }
@@ -250,7 +250,7 @@ body {
 
 }
 
-@media screen and (min-width:400px) and (max-width:599px) {
+@media (max-width:599px) {
     .imgTacos {
         display: none;
     }

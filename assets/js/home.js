@@ -1,17 +1,16 @@
-const carouselImages = document.querySelector('.carousel-images');
-let imageDivs = Array.from(document.querySelectorAll('.carousel-image'));
-let currentIndex = 0;
+const carouselImages = document.querySelector(".carousel-images");
+let imageDivs = Array.from(document.querySelectorAll(".carousel-image"));
 
 function moveSlide(direction) {
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = imageDivs.length - 1;
-    } else if (currentIndex >= imageDivs.length) {
-        currentIndex = 0;
-    }
-
-    carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+  if (direction === 1) {
+    const firstElement = imageDivs.shift();
+    imageDivs.push(firstElement);
+  } else if (direction === -1) {
+    const lastElement = imageDivs.pop();
+    imageDivs.unshift(lastElement);
+  }
+  carouselImages.innerHTML = "";
+  imageDivs.forEach((div) => carouselImages.appendChild(div));
 }
 
 setInterval(() => moveSlide(1), 2000);
