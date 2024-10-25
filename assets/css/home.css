@@ -95,7 +95,7 @@ body {
     height: 260px;
     margin: auto;
     overflow: hidden;
-    background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)),url(/assets/images/bacimg.webp);
+    background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)),url(./assets/images/bacimg.webp);
     display: flex;
     justify-content: center;
    
@@ -220,7 +220,7 @@ button.prev:hover, button.next:hover {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CSS du Footer  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 footer{
     margin-top: 25ch;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.868),#273e47),url(/assets/images/bacimg.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.868),#273e47),url(./assets/images/bacimg.webp);
     background-blend-mode: hard-light;
     background-position: center;
     background-repeat: no-repeat;
