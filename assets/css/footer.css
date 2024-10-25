@@ -1,7 +1,7 @@
 footer {
     margin-top: 20ch;
     background-color: #273E47;
-    background-image: url("/assets/images/footerbg.png");
+    background-image: url("../images/footerbg.png");
     background-blend-mode: hard-light;
     background-position: center;
     background-repeat: no-repeat;

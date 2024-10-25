@@ -156,10 +156,7 @@
     color: #C36732;
     letter-spacing: 10px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> features_Product_Page
 .nav-links a.active::before,
 .burger-links a.active::before {
     transform: scale3d(1, 1, 1);

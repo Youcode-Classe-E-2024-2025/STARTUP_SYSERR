@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Gabriela&family=Holtwood+One+SC&display=swap');
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes move {
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.service-body {
+    background-color: #273E47;
+    background-image: url("../images/mainbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    padding-top: 5rem;
+}
+
+.services h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "Gabriela", "sans-serif";
+    font-weight: normal;
+    margin: auto;
+    padding-bottom: 2rem;
+    animation: slideInLeft 0.4s ease-in-out forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.services-main-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: slideInLeft 0.8s ease-in-out forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.main-text-left h2 {
+    font-size: 4rem;
+    font-family: "Holtwood One SC";
+    font-weight: normal;
+    max-width: 65%;
+    margin: 0 8px;
+}
+
+.craving,
+.bite {
+    font-size: 5rem;
+    font-family: "Holtwood One SC";
+    font-weight: normal;
+    color: #A4243B;
+    background-image: linear-gradient(-225deg,
+            #A4243B 0%,
+            #D8973C 50%,
+            #A4243B 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s ease infinite;
+    display: inline-block;
+}
+
+.main-text-left a {
+    font-size: 1.5rem;
+    background-color: #A4243B;
+    display: block;
+    width: 35%;
+    padding-top: 8px;
+    height: 50px;
+    text-align: center;
+    margin: 0 8px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.main-text-left a:hover {
+    background-color: #EEE7D3;
+    color: #A4243B;
+    padding: 10px 15rem;
+}
+
+.main-text-left a:active {
+    background-color: #861d30;
+    color: #EEE7D3;
+    padding: 8px 15ch;
+}
+
+.main-text-left p {
+    font-size: 1.2rem;
+    max-width: 40%;
+    padding-top: 1rem;
+    margin: 20px 8px;
+    animation: slideInLeft 1.2s ease-in-out forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.services-burger {
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    right: 10%;
+    top: 8%;
+    filter: drop-shadow(40px 10px 30px black);
+    animation: move 3s ease-in-out infinite;
+}
+
+
+.services-review-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    animation: slideInLeft 1.5s ease forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.services-review-container h3 {
+    font-family: "Gabriela", "sans-serif";
+    color: #D8973C;
+    font-size: 2.5rem;
+    margin: 10px 8px;
+}
+
+.main-reviews p {
+    font-family: "Gabriela", "sans-serof";
+    margin: 0 8px;
+    padding-top: 10px;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+.services-stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 5%;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 50px;
+    opacity: 1;
+    background-color: #1D2E35;
+    background-blend-mode: screen;
+    background-image: url('../images/mainbackground.png');
+    background-size: cover;
+    background-position: center;
+    color: #EEE7D3;
+}
+
+.service-stats {
+    background-color: rgba(29, 46, 53, 0.5);
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.service-stats:hover {
+    transform: scale(1.1);
+    filter: invert();
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.5))
+}
+
+.service-info {
+    background-color: rgba(29, 46, 53, 0.5);
+    width: 23vw;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.service-info:hover {
+    transform: scale(1.1);
+    filter: invert();
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.5))
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Gabriela", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.service-stats p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.service-info h3 {
+    color: #D8973C;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: "Gabriela", sans-serif;
+}
+
+@media (max-width: 928px) {
+    .services-burger {
+        width: 40%;
+        left: 60%;
+        transition: all .2s;
+    }
+
+    .main-text-left p {
+        max-width: 100%;
+        transition: all .2s;
+    }
+
+    .services-stats-container {
+        grid-template-columns: 1fr;
+        transition: all .2s;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        transition: all .2s;
+    }
+}
+
+@media (max-width: 690px) {
+    .services-burger {
+        display: none;
+    }
+
+    .main-text-left h2 {
+        font-size: 2.5rem;
+        max-width: 100%;
+        text-align: center;
+        transition: all .2s;
+    }
+
+    .craving,
+    .bite {
+        font-size: 2.5rem;
+    }
+
+    .main-text-left p {
+        text-align: center;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .services-stats-container {
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    .main-text-left a {
+        width: auto;
+    }
+
+    .services-review-container h3 {
+        text-align: center;
+    }
+
+    .main-reviews p {
+        text-align: center;
+    }
+
+    .service-stats {
+        max-width: 100%;
+    }
+
+    .service-info {
+        width: 50vw;
+    }
+}
