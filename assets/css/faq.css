@@ -40,8 +40,13 @@ h1 {
     background-position: right;
     background-blend-mode: screen;
     background-repeat: repeat-y;
+    transition: all 0.2s;
 }
-
+.accordion:hover {
+    transform: scale(1.1);
+    filter: invert();
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.5))
+}
 .accordion__question {
     display: flex;
     justify-content: space-between;
