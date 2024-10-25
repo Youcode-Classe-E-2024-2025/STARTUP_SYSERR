@@ -3,13 +3,14 @@
 
 /*  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CSS de header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 body {
-    background-color: #022b3d7b;
+    background-color: #273E47;
     background-image: url("../images/mainbackground.png");
     background-position: center;
     background-blend-mode: screen;
 }
+
 * {
-    padding: 2px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -18,29 +19,33 @@ body {
     color: #EEE7D3;
     font-size: 1rem;
 }
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Style du section Home  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-.title{
-    display:flex;
+.title {
+    display: flex;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
 }
-.title h1{
-    font-family:"Holtwood One SC" ;
-    font-size:46px;
-    
+
+.title h1 {
+    font-family: "Holtwood One SC";
+    font-size: 46px;
+
 }
+
 .carousel {
     position: relative;
     max-width: 80%;
     height: 260px;
     margin: auto;
     overflow: hidden;
-    background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)),url(../assets/images/bacimg.webp);
+    background-image: linear-gradient(#a4243c6e, rgba(0, 0, 0, 0.537)), url(../assets/images/bacimg.webp);
     display: flex;
     justify-content: center;
-   
+
 
 }
+
 .carousel-images {
     height: 100%;
     width: 90%;
@@ -50,9 +55,10 @@ body {
     transition: transform 0.5s ease;
     gap: 10px;
 }
+
 .carousel-image {
     width: 90%;
-    height:85%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,30 +66,35 @@ body {
     background-color: #EEE7D3;
     transition: transform 0.5s ease-in-out;
 }
+
 .carousel-image img {
     width: 100%;
     height: 55%;
-    margin:0px;
+    margin: 0px;
 }
-.carousel-images h1{
+
+.carousel-images h1 {
     text-align: center;
-    margin:10px;
+    margin: 10px;
     background-color: #EEE7D3;
-    font-size:17px;
-    color:#BD632F;
-    font-family:Gabriela;
+    font-size: 17px;
+    color: #BD632F;
+    font-family: Gabriela;
 }
-.carousel-images h2{
+
+.carousel-images h2 {
     text-align: center;
-    background-color:#BD632F;
-    font-size:20px;
-    color:#EEE7D3;
+    background-color: #BD632F;
+    font-size: 20px;
+    color: #EEE7D3;
     height: 15%;
     width: 100%;
-    margin-top:15px;
-    font-family: Fustat,sans-serif;
+    margin-top: 15px;
+    font-family: Fustat, sans-serif;
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -94,18 +105,21 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 
 }
-.carousel button{
+
+.carousel button {
     background-color: #BD632F;
 }
+
 .prev {
     left: 10px;
 }
+
 .next {
     right: 10px;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Animation CSS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-.h1{
+.h1 {
     font-size: 3em;
     background-image: linear-gradient(-225deg,
             #b00c2a 0%,
@@ -117,67 +131,79 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: vibrate 0.4s linear infinite , textclip 1s ease infinite;
+    animation: vibrate 0.4s linear infinite, textclip 1s ease infinite;
 }
+
 @keyframes textclip {
     to {
         background-position: 200% center;
     }
 }
+
 @keyframes vibrate {
     0% {
         transform: translate(0);
     }
+
     25% {
         transform: translate(-2px, 3px);
     }
+
     50% {
         transform: translate(2px, -3px);
     }
+
     75% {
         transform: translate(-2px, -3px);
     }
+
     100% {
         transform: translate(0);
     }
 }
-button.prev:hover, button.next:hover {
+
+button.prev:hover,
+button.next:hover {
     background-color: rgba(255, 255, 255, 0.6)
 }
-.carousel-images img:hover{
-    transform: scale(1.2); 
+
+.carousel-images img:hover {
+    transform: scale(1.2);
     border-radius: 15px;
-   transition: transform 1s;
+    transition: transform 1s;
 }
-.carousel-images h2:hover{
+
+.carousel-images h2:hover {
     background-color: #861d30;
 }
 
 .carousel-images {
-    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Changer pour une transition plus fluide */
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Changer pour une transition plus fluide */
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Résponsivité du page home  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-@media (min-width:600px) and (max-width:850px) {
-    #img4{
-       display:none;
+@media (max-width:850px) {
+    #img4 {
+        display: none;
     }
-    .title h1{
-        font-family:"Holtwood One SC" ;
-        font-size:30px;
+
+    .title h1 {
+        font-family: "Holtwood One SC";
+        font-size: 30px;
     }
 }
-@media (min-width:394px) and (max-width:599px) {
-    #img4{
-       display:none;
+
+@media(max-width:599px) {
+    #img3 {
+        display: none;
     }
-    #img3{
-        display:none;
-     }
-    .title h1{
-        font-size:20px;
+
+    .title h1 {
+        font-size: 20px;
     }
-    .carousel-images h1{
-        font-size:14px;
+
+    .carousel-images h1 {
+        font-size: 14px;
     }
 }
