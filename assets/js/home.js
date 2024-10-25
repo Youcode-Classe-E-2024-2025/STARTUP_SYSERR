@@ -13,4 +13,4 @@ function moveSlide(direction) {
   imageDivs.forEach((div) => carouselImages.appendChild(div));
 }
 
-setInterval(() => moveSlide(1), 2000);
+//setInterval(() => moveSlide(1), 2000);
